@@ -1,0 +1,7 @@
+setModelicaPath("/Users/dickbarends/Modelica-models-experimental/Apollo12a");
+loadModel(Core);
+loadFile("Moonlanding.mo");
+simulate(MoonLanding, stopTime=230);
+plot({apollo.altitude,apollo.thrust});
+plot({apollo.mass});
+
